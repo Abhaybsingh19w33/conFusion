@@ -71,13 +71,24 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
+                <!-- col-12 content will cover the entire row for extra small screen sizes-->
+                <!-- col-sm content will cover remaining columns the row in small to extra large screen sizes-->
+                <div class="col-12 col-sm">
+                </div>
             </div>
         </div>
     </header>
 
+    <!-- container- this will contain the content -->
     <div class="container">
+        <!-- row 1 in container -->
         <div class="row">
+            <!-- breadcrumb for adding the  view of hiearachy of the pages-->
+            <!-- ol for introducing breadcrumb div can be used instead of ol also-->
+            <!-- col-12 streched to the entire screen-->
             <ol class="col-12 breadcrumb">
+                <!-- breadcrumb-item adding elements to hierarchy-->
+                <!-- active it will highlight the page status-->
                 <li class="breadcrumb-item">
                     <a href="./index.html">Home</a>
                 </li>
@@ -85,13 +96,14 @@
                     About Us
                 </li>
             </ol>
+            <!-- col-12 streched to the entire screen-->
             <div class="col-12">
                 <h3>About Us</h3>
                 <hr>
             </div>
-
         </div>
 
+        <!-- row 2 in container -->
         <div class="row row-content">
             <!-- col-sm-6 it will take the 6 columns of the row-->
             <div class="col-sm-6">
@@ -104,43 +116,49 @@
                 <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by
                     our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
             </div>
-
-            Facts At a Glance
-            Started
-            3 Feb. 2013
-            Major Stake Holder
-            HK Fine Foods Inc.
-            Last Year's Turnover
-            $1,250,375
-            Employees
-            40
-
-            <div class="col-12">
-                You better cut the pizza in four pieces because I'm not hungry enough to eat
-                six.
-                Yogi Berra,
-                The Wit and Wisdom of Yogi Berra, P. Pepe, Diversion Books,
-                2014
+            <!-- col - this will stack below the above col -->
+            <div class="col col-sm">
             </div>
         </div>
 
-        <div class="row">
+        <div class="row row-content">
+            <!-- col-12 streched to the entire screen-->
             <div class="col-12">
                 <h2>Corporate Leadership</h2>
-            </div>
-        </div>
-
-        <!-- row it create a new row-->
-        <div class="row">
-            2013 2014 2015
-            Employees 15 30 40
-            Guests Served 15000 45000 100,000
-            Special Events 3 20 45
-            Annual Turnover $251,325 $1,250,375 ~$3,000,000
-
-            <!-- col-12 this will stack below the table for extra small screen sizes-->
-            <!-- col-sm-3 from small to extra large screen it will occupy the remaining 3 columns of the row-->
-            <div class="col-12 col-sm-3">
+                <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
+                <!-- d-none this will hide on all screens -->
+                <!-- d-sm-block - this will hide the content on small screens -->
+                <!-- but not on screen from mdium to large screen -->
+                <p class="d-none d-sm-block">Our CEO, Peter, credits his hardworking East Asian immigrant parents who
+                    undertook the arduous journey to the shores of America with the intention of giving their children
+                    the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever
+                    is available inexpensively at the supermarket, was his first inspiration to create the fusion
+                    cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines
+                    to this restaurant, pioneering cross-cultural culinary connections.</p>
+                <h3>Dhanasekaran Witherspoon <small>Chief Food Officer</small></h3>
+                <!-- d-none this will hide on all screens -->
+                <!-- d-sm-block - this will hide the content on small screens -->
+                <!-- but not on screen from mdium to large screen -->
+                <p class="d-none d-sm-block">Our CFO, Danny, as he is affectionately referred to by his colleagues,
+                    comes from a long established family tradition in farming and produce. His experiences growing up on
+                    a farm in the Australian outback gave him great appreciation for varieties of food sources. As he
+                    puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>
+                <h3>Agumbe Tang <small>Chief Taste Officer</small></h3>
+                <!-- d-none this will hide on all screens -->
+                <!-- d-sm-block - this will hide the content on small screens -->
+                <!-- but not on screen from mdium to large screen -->
+                <p class="d-none d-sm-block">Blessed with the most discerning gustatory sense, Agumbe, our CTO,
+                    personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the
+                    tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his
+                    motto, <em>You click only if you survive my lick.</em></p>
+                <h3>Alberto Somayya <small>Executive Chef</small></h3>
+                <!-- d-none this will hide on all screens -->
+                <!-- d-sm-block - this will hide the content on small screens -->
+                <!-- but not on screen from mdium to large screen -->
+                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience
+                    having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering
+                    Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest
+                        cultures, and you get a winning hit! Amma Mia!</em></p>
             </div>
         </div>
     </div>
@@ -178,7 +196,8 @@
                 </div>
                 <!-- col-12 content will cover the entire row for extra small screen sizes stacked below the content-->
                 <!-- col-sm-4 content will cover 4 columns in the small screen sizes-->
-                <div class="col-12 col-sm-4">
+                <!-- align-self-center - this will align the content in the center-->
+                <div class="col-12 col-sm-4 align-self-center">
                     <!-- text-center this will add the text to the center -->
                     <div class="text-center">
                         <a href="http://google.com/+">Google+</a>
