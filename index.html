@@ -10,29 +10,93 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="./css/styles.css" rel="stylesheet">
     <title>Ristorante Con Fusion</title>
 </head>
 
 <body>
-    <header class="jumbotron">
+
+    <!-- navbar it will allow it to create a navigation bar-->
+    <!-- navbar-dark it is used to get a dark navigation bar-->
+    <!-- navbar-expand-sm navigation bar will collapse for small and extra small screen sizes-->
+    <!-- bg-primary the initial colour for the navigation bar-->
+    <!-- fixed-top it fixes the navigation bar to the top-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <!--to constraint the content-->
         <div class="container">
-            <div class="row">
+            <!-- navbar-toggler -->
+            <!-- collapse it is a javascript component usgae to toggle on and off the links in the nav bar-->
+            <!-- #Navbar taget of the button when the button is clicked-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <!-- nav-bar-icon it will add the icon for the toggle button-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar-brand it will display the brand of the desired company--->
+            <!-- mr-auto this will give proper space at right of the navbar -->
+            <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+            <!-- collapse - a javascript-->
+            <!-- navbar-collapse - this will hide the navbar onclick of a button -->
+            <div class="collapse navbar-collapse" id="Navbar">
+                <!-- navbar-nav helps to define links and display horizontaly-->
+                <!-- mr-auto the content will be pushed to the left side of the navigation bar-->
+                <ul class="navbar-nav mr-auto">
+                    <!-- nav-item this allows the item to be shown as links-->
+                    <!-- nav-link it will allow us to add href-->
+                    <!-- active class is used to show the active page-->
+                    <li class="navbar-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="./aboutus.html">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- adding jumbotron-->
+    <header class="jumbotron">
+        <!-- container class to constraint the content-->
+        <div class="container">
+            <!-- first row in header -->
+            <div class="row row-header">
+                <!-- col-12 content will cover the entire row for extra small screen sizes-->
+                <!-- col-sm-6 content will cover half the row in small to extra large screen sizes-->
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience.
-                        Ourlipsmacking creations will tickle your culinary senses!</p>
+                        Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
+                <!-- this will add this col to the below the first one-->
+                <!-- col-sm this will take the remaining columns in the small screen sizes to extra large screen sizes -->
                 <div class="col-12 col-sm">
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- all content is in this container, it will constraint the content-->
     <div class="container">
-        <div class="row">
+        <!-- dividing the container in rows row 1-->
+        <!-- align-items-center this will align-items in the center -->
+        <div class="row row-content align-items-center">
+            <!-- col-12 content will cover the entire row for extra small screen sizes-->
+            <!-- col-sm-4 content will cover 4 columns in the small screen sizes-->
+            <!-- col-md-3 content will cover 3 columns from medium to extra large screen sizes-->
+            <!-- order-sm-last content will pulled to the right side of the screen-->
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
+            <!-- col this will stacked below the first col, the content in extra small screen sizes-->
+            <!-- col-sm this will cover remaining 8 columns in the small screen sizes-->
+            <!-- order-sm-first it will pulled to the left side of the screen-->
+            <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
             <div class="col col-sm order-sm-first col-md">
                 <h2>Uthappizza</h2>
                 <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives,
@@ -40,11 +104,17 @@
             </div>
         </div>
 
-
-        <div class="row">
+        <!-- dividing the container in rows row 2-->
+        <div class="row row-content align-items-center">
+            <!-- col-12 content will cover the entire row for extra small screen sizes-->
+            <!-- col-sm-4 content will cover 4 columns in the small screen sizes-->
+            <!-- col-md-3 content will cover 3 columns from medium to extra large screen sizes-->
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
+            <!-- col this will stacked below the first col, the content in extra small screen sizes-->
+            <!-- col-sm this will cover remaining 8 columns in the small screen sizes-->
+            <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
             <div class="col col-sm col-md">
                 <h2>Weekend Grand Buffet</h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers,
@@ -53,10 +123,19 @@
             </div>
         </div>
 
-        <div class="row">
+        <!-- dividing the container in rows row 3-->
+        <div class="row row-content align-items-center">
+            <!-- col-12 content will cover the entire row for extra small screen sizes-->
+            <!-- col-sm-4 content will cover 4 columns in the small screen sizes-->
+            <!-- col-md-3 content will cover 3 columns from medium to extra large screen sizes-->
+            <!-- order-sm-last it will pulled to the right side of the screen-->
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
+            <!-- col this col content will stacked below the first col, the content in extra small screen sizes-->
+            <!-- col-sm content will cover remaining 8 columns in the small screen sizes-->
+            <!-- order-sm-first it will pulled to the left side of the screen-->
+            <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
             <div class="col col-sm order-sm-first col-md">
                 <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
@@ -67,18 +146,26 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="footer">
+        <!-- container - to constraint the content-->
         <div class="container">
+            <!-- row 1 in footer-->
             <div class="row">
+                <!-- col-4 content will cover the 4 columns for extra small screen sizes-->
+                <!-- col-sm-2 content will cover 2 columns in the small screen sizes to extra large screen sizes-->
+                <!-- offset-1  col-4 and col-7 is 11 column 1 is still remaining, so we offset this column this content will be pushed by 1 column-->
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
-                    <ul>
+                    <!-- list-unstyled this will remove the list style -->
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
+                <!-- col-7 content will cover the 7 columns for extra small screen sizes-->
+                <!-- col-sm-5 content will cover 5 columns in the small screen sizes to extra large screen sizes-->
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
@@ -90,8 +177,12 @@
                         Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
                     </address>
                 </div>
-                <div class="col-12 col-sm-4">
-                    <div>
+                <!-- col-12 content will cover the entire row for extra small screen sizes stacked below the content-->
+                <!-- col-sm-4 content will cover 4 columns in the small screen sizes to extra large screen sizes-->
+                <!-- align-self-center -  this will align-items in the center -->
+                <div class="col-12 col-sm-4 align-self-center">
+                    <!-- text-center - this will align the text in the center -->
+                    <div class="text-center">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                         <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -101,7 +192,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <!-- row 2 in footer-->
+            <!-- justify-content-center this will justify the content in the center -->
+            <div class="row justify-content-center">
+                <!-- col-auto - it will take space according to the content in it-->
                 <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
