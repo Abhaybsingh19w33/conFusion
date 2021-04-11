@@ -51,17 +51,18 @@
                     <!-- fa-info for info icon-->
                     <!-- fa-list for menu icon-->
                     <!-- fa-lg for larger icon-->
-                    <li class="navbar-item active">
-                        <a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a>
+                    <li class="navbar-item ">
+                        <a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a>
                     </li>
-                    <li class="navbar-item">
-                        <a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a>
+                    <li class="navbar-item active">
+                        <a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a>
                     </li>
                     <li class="navbar-item">
                         <a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="nav-link" href="./contactus.html"><span class="fa fa-address fa-lg"></span> Contact</a>
+                        <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>
+                            Contact</a>
                     </li>
                 </ul>
             </div>
@@ -127,7 +128,41 @@
                     our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
             </div>
             <!-- col - this will stack below the above col -->
-            <div class="col col-sm">
+            <div class="col-sm">
+                <div class="card">
+                    <!-- card-header -->
+                    <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+                    <div class="card-body">
+                        <!-- description list-->
+                        <dl class="row">
+                            <!-- dt description title-->
+                            <!-- dd details-->
+                            <dt class="col-6">Started</dt>
+                            <dd class="col-6">3 Feb. 2013</dd>
+                            <dt class="col-6">Major Stake Holder</dt>
+                            <dd class="col-6">HK Fine Foods Inc.</dd>
+                            <dt class="col-6">Last Year's Turnover</dt>
+                            <dd class="col-6">$1,250,375</dd>
+                            <dt class="col-6">Employees</dt>
+                            <dd class="col-6">40</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card card-body bg-light">
+                    <!-- blockquote it will over ride the blockquote class of the default browsers by bootstrap provided blockquote-->
+                    <blockquote class="blockquote">
+                        <!-- mb-0 margin bottom 0 it helps to display the content perfectly-->
+                        <p class="mb-0">You better cut the pizza in four pieces because I'm not hungry enough to eat
+                            six.</p>
+                        <footer class="blockquote-footer">Yogi Berra,
+                            <cite title="Source Title">The Wit and Wisdom of Yogi Berra, P. Pepe, Diversion Books,
+                                2014</cite>
+                        </footer>
+
+                    </blockquote>
+                </div>
             </div>
         </div>
 
@@ -169,6 +204,56 @@
                     having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering
                     Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest
                         cultures, and you get a winning hit! Amma Mia!</em></p>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12 col-sm-9">
+                <h2>Facts &amp; Figures</h2>
+                <!-- this will make the table scrollable if the data is not able to fit in the table -->
+                <div class="table-responsive">
+                    <!-- table it will over ride the table class of the default browsers by bootstrap providedd tables-->
+                    <!-- table-striped this is what makes alternate rows coloring-->
+                    <table class="table table-striped">
+                        <!-- thead-dark it colors the head in dark-->
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>2013</th>
+                                <th>2014</th>
+                                <th>2015</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Employees</th>
+                                <td>15</td>
+                                <td>30</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <th>Guests Served</th>
+                                <td>15000</td>
+                                <td>45000</td>
+                                <td>100,000</td>
+                            </tr>
+                            <tr>
+                                <th>Special Events</th>
+                                <td>3</td>
+                                <td>20</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <th>Annual Turnover</th>
+                                <td>$251,325</td>
+                                <td>$1,250,375</td>
+                                <td>~$3,000,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3">
+
             </div>
         </div>
     </div>
