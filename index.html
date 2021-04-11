@@ -66,9 +66,75 @@
                             Contact</a>
                     </li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <!-- fa-sign-in font awesome sign in icon-->
+                        <span class="fa fa-sign-in"></span>Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+
+    <!--  bootstarp suggests to add all the modal related stuff to the top the page-->
+    <!-- modal -->
+    <!-- fade modal will fade in to the screen -->
+    <!-- dialog means it will displyed on topm of page -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <!-- modal-dialog modal will be centre aligned-->
+        <!-- modal-lg size of the modal will be large-->
+        <!-- content the content of the modal -->
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <!-- modal-header header of the modal -->
+                <div class="modal-header">
+                    <!-- modal-title title of the modal -->
+                    <h4 class="modal-title">Login </h4>
+                    <!-- close close x button on the right corner of the modal to close it -->
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- modal-body it will hold the modal content -->
+                <div class="modal-body">
+                    <!-- form for the sign in -->
+                    <form>
+                        <!-- form-row it creates the row in the form -->
+                        <div class="form-row">
+                            <!-- form-group it will create the group of the form -->
+                            <!-- col-sm-4 for small to extra large it will occupy 4 columns of the row -->
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                    placeholder="Enter email">
+                            </div>
+                            <!-- form-group it will create the group of the form -->
+                            <!-- col-sm-4 for small to extra large it will occupy 4 columns of the row -->
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1"
+                                    id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <!-- col-sm-auto it will allocate sufficient space for the label -->
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- form-row adding another row to the form -->
+                        <div class="form-row">
+                            <!-- cancel button -->
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                            <!-- submigt button -->
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- adding jumbotron-->
     <header class="jumbotron">
@@ -334,7 +400,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // where ever this tag is in html tag enable the tooltip for them
             $('[data-toggle="tooltip"]').tooltip();
         });
