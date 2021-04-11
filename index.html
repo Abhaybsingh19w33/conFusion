@@ -93,7 +93,13 @@
                 <!-- col-12 content will cover the entire row for extra small screen sizes, it will be stacked below the above div tag-->
                 <!-- col-sm for small to extra large screen sizes this will cover the left over space in row-->
                 <div class="col-12 col-sm align-self-center">
-                    <a  role="button" class="btn btn-sm btn-warning btn-block" id="reserve-button" href="#reservation">Reserve Table</a>
+                    <!-- tooltip-->
+                    <!-- data-html="true" of we apply this data html attribute that means the contenrt of the tooltip can be applied using html-->
+                    <!-- title in this the content of the tooltip will be enclosed -->
+                    <!-- data placement bottom that will place the tooltip to the bottom of the button -->
+                    <a role="button" class="btn btn-block nav-link btn-warning " id="reserve-button"
+                        data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 123445678</strong>"
+                        data-placement="bottom" href="#reserveform">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -211,7 +217,7 @@
                 <div class="card">
                     <h3 class="card-header text-white" style="background-color:#ffc107">Reserve a Table</h3>
                     <div class="card-body">
-                        <form id="reservation">
+                        <form id="reserveform">
                             <div class="form-group row">
                                 <label for="number-of-guests" class="col-12 col-md-2 col-form-label">Number of
                                     Guests</label>
@@ -327,6 +333,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // where ever this tag is in html tag enable the tooltip for them
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
