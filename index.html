@@ -11,6 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="./css/styles.css" rel="stylesheet">
+    <!-- <link href="./css/styles2.css" rel="stylesheet"> -->
     <!-- fa font-awesome icon-->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <!-- bootstrap-social icon for media icons-->
@@ -37,7 +38,7 @@
             </button>
             <!-- navbar-brand it will display the brand of the desired company--->
             <!-- mr-auto this will give proper space at right of the navbar -->
-            <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+            <a class="navbar-brand mr-auto" href="./index.html"><img src="img/logo.png" height="30" width="41"></a>
             <!-- collapse - a javascript-->
             <!-- navbar-collapse - this will hide the navbar onclick of a button -->
             <div class="collapse navbar-collapse" id="Navbar">
@@ -53,7 +54,7 @@
                     <!-- fa-list for menu icon-->
                     <!-- fa-lg for larger icon-->
                     <li class="navbar-item active">
-                        <a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span>  Home</a>
+                        <a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a>
                     </li>
                     <li class="navbar-item">
                         <a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a>
@@ -62,7 +63,8 @@
                         <a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
                     </li>
                     <li class="navbar-item">
-                        <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a>
+                        <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>
+                            Contact</a>
                     </li>
                 </ul>
             </div>
@@ -84,7 +86,9 @@
                 </div>
                 <!-- this will add this col to the below the first one-->
                 <!-- col-sm this will take the remaining columns in the small screen sizes to extra large screen sizes -->
-                <div class="col-12 col-sm">
+                <div class="col col-sm align-self-center">
+                    <!-- img-fluid to image be reponsive-->
+                    <img src="img/logo.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -107,9 +111,22 @@
             <!-- order-sm-first it will pulled to the left side of the screen-->
             <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
             <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives,
-                    ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <!-- media -->
+                <div class="media">
+                    <!-- d-flex-->
+                    <!-- mr-3 margin right number 3 so it give sufficient margin to the right of the image so that description os slightly set apart o fthe image-->
+                    <!-- img-thumbnail it will provide the a white border to the image-->
+                    <!-- align-self-center-->
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="utheppizza">
+                    <!-- media-body-->
+                    <div class="media-body">
+                        <!-- mt-0 margin top 0 so title willl be aligned to the top of the media object-->
+                        <h2 class="mt-0">Uthappizza</h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola
+                            olives,
+                            ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -146,11 +163,23 @@
             <!-- order-sm-first it will pulled to the left side of the screen-->
             <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
             <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with
-                    whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion
-                    experiences. </p>
+                <!-- media -->
+                <div class="media">
+                    <!-- d-flex-->
+                    <!-- mr-3 margin right number 3 so it give sufficient margin to the right of the image so that description os slightly set apart o fthe image-->
+                    <!-- img-thumbnail it will provide the a white border to the image-->
+                    <!-- align-self-center-->
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="alberto">
+                    <!-- media-body-->
+                    <div class="media-body">
+                        <!-- mt-0 margin top 0 so title willl be aligned to the top of the media object-->
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked
+                            closely with whos-who in the culinary world, he specializes in creating mouthwatering
+                            Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
