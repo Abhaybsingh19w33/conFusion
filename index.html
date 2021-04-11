@@ -7,11 +7,10 @@
     <!-- to make the web page responsive according to the size of the screen size-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="./css/styles.css" rel="stylesheet">
-    <!-- <link href="./css/styles2.css" rel="stylesheet"> -->
+    <link href="./css/styles2.css" rel="stylesheet">
     <!-- fa font-awesome icon-->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <!-- bootstrap-social icon for media icons-->
@@ -67,9 +66,75 @@
                             Contact</a>
                     </li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <!-- fa-sign-in font awesome sign in icon-->
+                        <span class="fa fa-sign-in"></span>Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+
+    <!--  bootstarp suggests to add all the modal related stuff to the top the page-->
+    <!-- modal -->
+    <!-- fade modal will fade in to the screen -->
+    <!-- dialog means it will displyed on topm of page -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <!-- modal-dialog modal will be centre aligned-->
+        <!-- modal-lg size of the modal will be large-->
+        <!-- content the content of the modal -->
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <!-- modal-header header of the modal -->
+                <div class="modal-header">
+                    <!-- modal-title title of the modal -->
+                    <h4 class="modal-title">Login </h4>
+                    <!-- close close x button on the right corner of the modal to close it -->
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- modal-body it will hold the modal content -->
+                <div class="modal-body">
+                    <!-- form for the sign in -->
+                    <form>
+                        <!-- form-row it creates the row in the form -->
+                        <div class="form-row">
+                            <!-- form-group it will create the group of the form -->
+                            <!-- col-sm-4 for small to extra large it will occupy 4 columns of the row -->
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                    placeholder="Enter email">
+                            </div>
+                            <!-- form-group it will create the group of the form -->
+                            <!-- col-sm-4 for small to extra large it will occupy 4 columns of the row -->
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1"
+                                    id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <!-- col-sm-auto it will allocate sufficient space for the label -->
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- form-row adding another row to the form -->
+                        <div class="form-row">
+                            <!-- cancel button -->
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                            <!-- submigt button -->
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- adding jumbotron-->
     <header class="jumbotron">
@@ -86,9 +151,21 @@
                 </div>
                 <!-- this will add this col to the below the first one-->
                 <!-- col-sm this will take the remaining columns in the small screen sizes to extra large screen sizes -->
-                <div class="col col-sm align-self-center">
+                <div class="col-12 col-sm align-self-center">
                     <!-- img-fluid to image be reponsive-->
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+
+                <!-- col-12 content will cover the entire row for extra small screen sizes, it will be stacked below the above div tag-->
+                <!-- col-sm for small to extra large screen sizes this will cover the left over space in row-->
+                <div class="col-12 col-sm align-self-center">
+                    <!-- tooltip-->
+                    <!-- data-html="true" of we apply this data html attribute that means the contenrt of the tooltip can be applied using html-->
+                    <!-- title in this the content of the tooltip will be enclosed -->
+                    <!-- data placement bottom that will place the tooltip to the bottom of the button -->
+                    <a role="button" class="btn btn-block nav-link btn-warning " id="reserve-button"
+                        data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 123445678</strong>"
+                        data-placement="bottom" href="#reserveform">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -121,8 +198,12 @@
                     <!-- media-body-->
                     <div class="media-body">
                         <!-- mt-0 margin top 0 so title willl be aligned to the top of the media object-->
-                        <h2 class="mt-0">Uthappizza</h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola
+                        <!-- badge badge-danger this will add hot bagde with red color-->
+                        <!-- badge badge-pill badge-secondary this will add a grey color badge of the price-->
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span
+                                class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian
+                            pizza, topped with Cerignola
                             olives,
                             ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
@@ -142,10 +223,23 @@
             <!-- col-sm this will cover remaining 8 columns in the small screen sizes-->
             <!-- col-md this will cover the remaining 9 columns in medium to extra large screen sizes-->
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers,
-                    six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just
-                    $19.99 per person </p>
+                <!-- media -->
+                <div class="media">
+                    <!-- media-body-->
+                    <div class="media-body">
+                        <!-- mt-0 margin top 0 so title willl be aligned to the top of the media object-->
+                        <!-- badge badge-danger this will add new badge with red color-->
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW </span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
+                            different salads, six enticing appetizers, six main entrees and five choicest desserts. Free
+                            flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <!-- d-flex-->
+                    <!-- ml-3 margin left number 3 so it give sufficient margin to the left of the image so that description os slightly set apart o fthe image-->
+                    <!-- img-thumbnail it will provide the a white border to the image-->
+                    <!-- align-self-center-->
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
+                </div>
             </div>
         </div>
 
@@ -175,9 +269,59 @@
                         <!-- mt-0 margin top 0 so title willl be aligned to the top of the media object-->
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
-                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International
+                            experience having worked
                             closely with whos-who in the culinary world, he specializes in creating mouthwatering
                             Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-md-8 offset-md-2">
+                <div class="card">
+                    <h3 class="card-header text-white" style="background-color:#ffc107">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form id="reserveform">
+                            <div class="form-group row">
+                                <label for="number-of-guests" class="col-12 col-md-2 col-form-label">Number of
+                                    Guests</label>
+                                <div class="col-12 col-sm">
+                                    <label class="radio-inline"><input type="radio" name="optradio"><strong>
+                                            1</strong></label>
+                                    <label class="radio-inline"><input type="radio" name="optradio"><strong>
+                                            2</strong></label>
+                                    <label class="radio-inline"><input type="radio" name="optradio"><strong>
+                                            3</strong></label>
+                                    <label class="radio-inline"><input type="radio" name="optradio"><strong>
+                                            4</strong></label>
+                                    <label class="radio-inline"><input type="radio" name="optradio"><strong>
+                                            5</strong></label>
+                                    <label class="radio-inline"><input type="radio" name="optradio"><strong>
+                                            6</strong></label>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="date-and-time" class="col-12 col-md-2 col-form-label">Date and Time</label>
+
+                                <div class="col">
+                                    <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>
+                                <div class="col">
+                                    <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="submit" class="btn btn-primary">
+                                        Reserve
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -255,6 +399,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // where ever this tag is in html tag enable the tooltip for them
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
